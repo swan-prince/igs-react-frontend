@@ -1,0 +1,123 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+// @import './custom/abodaif.scss';
+
+.border-radius-6px {
+	border-radius: 6px;
+}
+.igs-active-nav {
+	a {
+		background: transparent !important;
+		box-shadow: none !important;
+		.menu-item {
+			color: #6DAB70;
+			font-weight: bold;
+		}
+	}
+}
+.igs-panel-title {
+	color: #9FC928 !important;
+	font-weight: bold;
+	font-size: 28px;
+	padding-left: 30px;
+}
+.igs-navbar-heaader {
+	height: auto !important;
+	margin-bottom: 46px;
+	.brand-logo img {
+		max-width: 184px !important;
+	}
+	.modern-nav-toggle {
+		padding-top: 1.35rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		height: 100%;
+		display: flex;
+	}
+}
+.dropdown-user-link {
+	.user-role {
+		color: #9FC928;
+	}
+}
+.breadcrumb-item.active {
+	color: #6DAB70 !important;
+}
+.igs-nav-pill {
+	.nav-link.active {
+		background-color: #9FC928 !important;	
+		color: #3B4253 !important;
+	}
+	.nav-link {
+		margin-right: 1rem;
+		background-color: #3B4253 !important;
+		color: #ABAFB5;
+		border: none;
+		font-weight: bold;
+		box-shadow: none !important;
+	}
+}
+.text-underline {
+	text-decoration: underline;
+}
+.igc-text-color-1 {
+	color: #b4b7bd;
+}
+.igs-text-color-2 {
+	color: #7B972D;
+}
+.igc-text-color-3 {
+	color: #D0D2D6;
+}
+.background-transparent {
+	background-color: transparent !important;
+}
+.igs-bg-auth {
+  background-color: #283046 !important;
+}
+.badge.badge-light-yellow {
+	color: #D5F50A;
+	background-color: rgba($color: #D5F50A, $alpha: 0.12);
+}
+.badge.badge-task-light-yellow {
+	color: white;
+	background-color: #EA5455;
+}
+.igs-auth-left-section {
+	width: 386px;
+}
+.igs-auth-right-section {
+	width: calc(100% - 386px);
+}
+.igs-input-text {
+	background-color: transparent !important;
+	border-color: #3B4253;
+	label::before {
+		background-color: transparent;
+		border-color: #3B4253;
+	}
+	label {
+		color: white;
+	}
+	input, .input-group-append .input-group-text  {
+		background-color: transparent !important;
+		border-color: #3B4253;
+	}
+}
+@media screen and (max-width: 991.98px) {
+  .igs-auth-right-section {
+    width: 100%;
+  }
+	.igs-auth-left-section {
+    width: 100%;
+  }
+}
