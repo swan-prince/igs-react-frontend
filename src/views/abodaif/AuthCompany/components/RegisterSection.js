@@ -3,8 +3,10 @@ import { CreditCard, Home, User, Users } from 'react-feather'
 
 import Wizard from '@components/wizard'
 import CompanyInfo from './CompanyInfo'
-import UserAdminInfo from './UserAdminInfo'
+import Verification from './Verification'
 import SystemAdminApproval from './SystemAdminApproval'
+import UserAdminInfo from './UserAdminInfo'
+
 import IGSLogo1 from '@src/assets/images/logo/igs-logo.png'
 
 const RegisterSection = () => {
@@ -32,7 +34,7 @@ const RegisterSection = () => {
       title: 'User Verification',
       subtitle: 'Verify your Data ',
       icon: <Users size={18} />,
-      content: <div>user verification</div>
+      content: <Verification stepper={stepper} />
     },
     {
       id: 'admin-approval',

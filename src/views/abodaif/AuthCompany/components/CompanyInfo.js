@@ -10,9 +10,7 @@ import {
   Label,
   Input,
   CustomInput,
-  Button,
-  InputGroupAddon,
-  InputGroup
+  Button
 } from 'reactstrap'
 import { ChevronLeft } from 'react-feather'
 
@@ -21,6 +19,8 @@ import '@uppy/status-bar/dist/style.css'
 import '@styles/react/libs/file-uploader/file-uploader.scss'
 
 const CompanyInfo = (props) => {
+
+  const { stepper } = props
 
   const [companyLogo, setCompanyLogo] = useState(null)
 
@@ -197,7 +197,9 @@ const CompanyInfo = (props) => {
       <Col sm='12' lg='4'>
         <Row>
           <Col sm='6'>
-            <Button.Ripple color='info' className='w-100 mb-1'>Next</Button.Ripple>
+            <Button.Ripple color='info' className='w-100 mb-1' onClick={() => stepper.next()}>
+              Next
+            </Button.Ripple>
           </Col>
           <Col sm='6'>
             <Button.Ripple color='info' outline className='w-100'>

@@ -10,7 +10,13 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 // @import './custom/abodaif.scss';
-
+.mx-0-5 {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.mb-0-5 {
+	margin-bottom: 0.5rem;
+}
 .border-radius-6px {
 	border-radius: 6px;
 }
@@ -112,6 +118,10 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 		background-color: transparent !important;
 		border-color: #3B4253;
 	}
+}
+.igs-security-input {
+	width: 3rem;
+	text-align: center;
 }
 @media screen and (max-width: 991.98px) {
   .igs-auth-right-section {
