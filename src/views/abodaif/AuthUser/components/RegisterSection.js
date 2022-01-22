@@ -1,21 +1,5 @@
 import { useRef, useState } from 'react'
-import Select from 'react-select'
-import CreatableSelect from 'react-select/creatable'
-import {
-  Row,
-  Col,
-  CardTitle,
-  CardText,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  CustomInput,
-  Button,
-  InputGroupAddon,
-  InputGroup
-} from 'reactstrap'
-import { Search, FileText, User, MapPin, Link, Home, CreditCard } from 'react-feather'
+import { User, Users, Home, CreditCard } from 'react-feather'
 
 import Wizard from '@components/wizard'
 import CompanyInfo from './CompanyInfo'
@@ -42,6 +26,13 @@ const RegisterSection = () => {
       subtitle: 'Enter Information',
       icon: <User size={18} />,
       content: <UserAdminInfo stepper={stepper} />
+    },
+    {
+      id: 'user-verification',
+      title: 'User Verification',
+      subtitle: 'Verify your Data ',
+      icon: <Users size={18} />,
+      content: <div>user verification</div>
     },
     {
       id: 'admin-approval',
