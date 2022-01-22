@@ -10,6 +10,7 @@ const AuthCompany = () => {
 
   return (
     <div className='auth-wrapper auth-v2'>
+      updated
       <Row className='auth-inner m-0'>
         <LoginSection />
         <RegisterSection />
